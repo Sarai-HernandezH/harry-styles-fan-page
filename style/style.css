@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+    
 *{
     padding: 0px;
     margin: 0px;
@@ -13,7 +14,7 @@ body{
 header{
     text-align: right;
     text-decoration: none;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 50px 0px;
     padding: 25px;
     border-bottom: 4px solid #d6386d;
 }
@@ -36,7 +37,7 @@ h1{
     text-decoration: underline;
     font-size: 1.44rem;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 /*     Navbar style */
 
@@ -108,11 +109,10 @@ ul li{
 
 .indexCollage{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center; 
     margin-left: 150px;
     margin-bottom: 50px;
+    max-width: 900px;
+    max-height: 500px;
 }
 .introductionIndex{
     text-align: justify;
@@ -121,7 +121,7 @@ ul li{
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: auto auto ;
     grid-template-areas: "single . paragraph"
-                         "movie . paragraph";
+                        "movie . paragraph";
     column-gap: 50px;
 }
 .single{
@@ -167,7 +167,6 @@ img{
     grid-template-rows: auto auto auto auto;
 }
 .colOneD{
-    font-size: 1rem;
     text-align: justify;
     display: flex;
     flex-wrap: wrap;
@@ -244,6 +243,9 @@ img{
     grid-template-columns: 120px 120px 120px 120px;
     grid-auto-rows: 95px;
     column-gap: 20px;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .ig{
     animation: bounce 10s;
@@ -414,31 +416,35 @@ img{
     }
 }
 footer{
-    font-size: 0.75em;
+    font-size: 1rem;
     font-weight: bold; 
     text-align: center;
     margin-top: 70px;
-    padding: 20px 450px 20px 450px;
+    margin-bottom: 25px;
     border-top: 4px solid #d6386d;  
 }
 
 /* responsive behaviour for mobile */
 /* index*/
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 821px) {
     header{
-        border-bottom: 2px solid #d6386d;
+        border-bottom: none;
     }
     h1{
         font-size: 2rem;
     }
     .logo{
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
         justify-items: flex-start;
     }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
     ul li{
-        display: inline-flex;
         font-size: 0.85rem;
     }
     .paragraph{
@@ -451,17 +457,18 @@ footer{
         font-size: 1rem;
     }
     .introductionIndex{
-        margin: 20px 30px 20px 20px;
-        display: grid;
-        grid-template-columns: 90vw;
-        grid-template-rows: auto;
+        margin: 20px 0px 20px 0px;
+        grid-template-columns: 85vw;
+        grid-template-rows: 500px 315 315;
         grid-template-areas: "paragraph"
                             "single"
                             "movie";
+        justify-content: center;
+        row-gap: 60px;
     }
     .icon{
-        width: 30px;
-        height: 30px;
+        width: 45px;
+        height: 45px;
     }
     /*multimedia */
 
@@ -472,7 +479,9 @@ footer{
         max-width: 70vw;
     }
     .indexCollage{
-        margin-left: 35px;
+        max-width: 85vw;
+        max-height: 85vw;
+        margin-left: 15px;
         margin-bottom: 30px;
     }
 /* contact page */
@@ -483,7 +492,7 @@ footer{
     }
     .legend{
         font-size: 0.75rem;
-        padding: 5px 5px 5px 5px;
+        padding: 5px;
     }
     .contact{
         font-size: 0.65em;
@@ -519,7 +528,6 @@ footer{
     grid-template-rows: auto;
 }
 .colOneD{
-    font-size: 0.65rem;
     margin: 20px 0px 20px 5px;
     padding: 15px;
     max-width: 80vw;
@@ -539,12 +547,14 @@ footer{
 /*acting page*/
 .sectionActing{
     flex-direction: column;
+    flex-wrap: wrap;
     align-content: center;
 }
 /* awards page*/
 .sectionAwards{
     flex-direction: column;
     align-items: center;
+    margin: 10px;
 }
 .harryGrammy{
     width: 205px;
@@ -559,17 +569,175 @@ footer{
 }
 .internalLink{
     display: grid;
-    grid-template-columns: 22vw 22vw 22vw 22vw;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
     grid-auto-rows: 40px;
     column-gap: 3px;
     justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 10px;
 }
 footer{
-    padding: 10px 15px 10px 15px;
-    margin-top: 25px;
-    border-top: 2px solid #d6386d;
+    border-top: none;
 }
 }
+/* responsive behaviour for Tablet / Ipad devices*/
+/*Index*/
 
 
+@media screen and (min-width:822px) and (max-width:1180px) {
+    header{
+        border-bottom: none;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .logo{
+        justify-items: flex-start;
+        max-width: 60px;
+        max-width: 60px;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    ul li{
+        font-size: 1.25rem;
+    }
+    .paragraph{
+        font-size: 0.95rem;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    .hSub{
+        font-size: 1.20rem;
+    }
+    .introductionIndex{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "paragraph ."
+                            "single movie";
+        column-gap: 30px;
+        row-gap: 10px;
+        justify-items: center;
+    }
+    /*multimedia */
 
+    iframe{
+        max-width: 410px;
+        max-height: 415px;
+    }
+    img{
+        max-width: 415px;
+    }
+    .indexCollage{
+        display: block;
+        max-width: 90vw;
+        max-height: 400px;
+        margin-left: 80px;
+        margin-bottom: 50px;
+    }
+/* contact page */
+
+    .contactUs{
+        margin: 80px;
+        margin-top: 40px;
+        padding: 60px;
+    }
+    .legend{
+        font-size: 1.30rem;
+        padding: 20;
+    }
+    .contact{
+        font-size: 0.95em;
+    }
+    .hContact{
+        font-size: 0.95em;
+    }
+    .termsC{
+        font-size: 0.95em;
+    }
+    .submit{
+        font-size: 0.90em;
+        padding: 5px;
+        margin: 2px 25px 5px 40px;
+    }
+/*oned page*/
+
+.sectionOneD{
+    justify-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+.pictures{
+    max-width: 340px;
+    max-height: 215px;
+    margin: 40px;
+}
+
+.many{
+    grid-template-rows: auto;
+    column-gap: 5px;
+}
+.colOneD{
+    margin: 20px 0px 20px 5px;
+    padding: 25px;
+    max-width: 80vw;
+    border: solid 2px #d6386d;
+}
+.containerMultimedia{
+    padding: 5px;
+}
+/*Discography page*/
+
+.sectionDisc{
+    flex-wrap: wrap;
+}
+.colDisc{
+    padding: auto;
+}
+/*Acting page*/
+
+.sectionActing{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+
+}
+/* Awards page*/
+
+.sectionAwards{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 30px;
+}
+.harryGrammy{
+    width: 205px;
+    height: 200px;
+}
+
+/*footer */
+
+.redes, .pageUp{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.internalLink{
+    display: grid;
+    grid-template-columns: 18vw 18vw 18vw 18vw;
+    grid-auto-rows: 40px;
+    column-gap: 3px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+footer{
+    font-size: 1.25rem;
+    border-top: none;
+}
+}
