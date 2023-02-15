@@ -66,6 +66,7 @@ a:hover{
     color: rgba(237,127,214,1) !important;
     transition: 2s;
 }
+
 /* Contact Style  */
 
 .contactUs{
@@ -74,7 +75,7 @@ a:hover{
 }
 .legend{
     font-weight: bold;
-    font-size: 1.40rem;
+    font-size: 1.25rem;
     text-align: center;
     padding: 20px 30px 20px 30px;
 }
@@ -82,7 +83,7 @@ a:hover{
     font-size: 0.95em;
     font-weight: lighter;
     text-align: center;
-    margin: 10px 25px 10px 20px ;
+    margin: 30px 200px 50px 200px;
     padding-bottom: 5px;
 }
 .hContact{
@@ -90,10 +91,15 @@ a:hover{
     font-weight: lighter;
     padding-bottom: 10px;
 }
-.termsC{
+#termsC, .termsC{
+    text-decoration: none !important;
+    text-align: center;
     font-size: 0.95em;
     font-weight: bold;
+    color: white !important;
+    transition: none !important;
     margin-bottom: 10px;
+    
 }
 .submit{
     font-size: 0.99em;
@@ -104,12 +110,21 @@ a:hover{
     background-color: white;
     border-radius: 5px;
 }
+.submit:hover{
+    font-size: 1.30rem;
+    color: rgba(237,127,214,1) !important;
+    transition: 2s;
+}
 /*   Index Style */
-
-.carousel-indicators{
-    margin-top: 500px;
+.paragraph{
+    text-align: justify;
 }
 
+.container{
+    margin-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
 .indexCollage{
     display: flex;
     margin-left: 150px;
@@ -419,7 +434,7 @@ footer{
         border-bottom: none;
     }
     h1{
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .logo{
         width: 50px;

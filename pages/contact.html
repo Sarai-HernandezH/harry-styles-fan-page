@@ -51,61 +51,54 @@
         <fieldset class="contactUs">
             <legend class="legend">Do you have any questions or suggestions? Fill the form below and we will get back to
                 you ASAP!</legend>
-            <div class="contact">
-                <label for="mail">Email address</label>
-                <input type="email" name="mail" id="mail" required>
-            </div>
-            <div class="contact">
-                <label for="name">Name or Nickname</label>
-                <input type="text" name="name" id="name" required>
-            </div>
-            <div class="contact">
-                <label for="comments">
-                    <h4 class="contact"> Tell us what's on your mind </h4>
-                    <textarea name="comments" id="" cols="30" rows="10"></textarea>
-                </label>
-            </div>
+                <div class="mb-3 contact">
+                    <label for="FormContactInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="FormContactInput1" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3 contact">
+                    <label for="Textarea1" class="form-label">Share with us what's on your mind</label>
+                    <textarea class="form-control" id="Textarea1" style="height: 100px"></textarea>
+                </div>
+                <div class="mb-3 contact">
+                    <label for="name" class="form-label">Name or Nickname</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
             <input type="submit" value="Send" class="submit">
         </fieldset>
-    </form>
-
     <h1 class="hS">Subscribe and receive the latest updates!</h1>
-
     <form action="">
         <fieldset class="contactUs">
             <legend class="legend">Register</legend>
-            <div class="contact">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
+            <div class="mb-3-md contact">
+                <label for="name1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name1">
             </div>
-            <div class="contact">
-                <label for="lastN">Last Name</label>
-                <input type="text" name="lastm" id="lastm" required>
+            <div class="mb-3-md contact">
+                <label for="last-name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="last-name">
             </div>
-            <div class="contact">
-                <label for="mail">Email Address</label>
-                <input type="email" name="mail" id="mail" placeholder="test@example.com" required>
+            <div class="mb-3-md contact">
+                <label for="FormContactInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="FormContactInput1" placeholder="name@example.com" required>
             </div>
-            <div class="contact">
+            <div class=" mb-3-md contact">
                 <label for="bd">Date of Birth</label>
                 <input type="date" name="bd" id="bd">
             </div>
-            <div class="contact">
+            <div class="mb-3-md contact">
                 <h2 class="hContact">Would you like to receive an email with our updates?</h2>
                 <input type="radio" name="news" id="yes">
                 <label for="yes">Yes</label>
                 <input type="radio" name="news" id="no">
                 <label for="no">No</label>
             </div>
-            <div class="contact">
+            <div class="mb-3-md contact">
                 <h2 class="hContact">Terms and Conditions</h2>
-                <textarea name="termscon" id="tc" cols="30" rows="10" readonly>
-                    Please read this terms and conditions carefully before using Our Service.
-                    </textarea>
+                <input class="form-control" type="text" value="Please read this terms and conditions carefully before using Our Service..." aria-label="readonly input example" readonly style="height: 100px">
                 <div class="contact">
                     <input type="checkbox" name="terms" class="termsC" required>
                     <label for="checkbox" class="termsC">I agree to the</label>
-                    <a href="#" class="termsC">Terms and Conditions</a>
+                    <a id="termsC" href="#" class="termsC">Terms and Conditions</a>
                 </div>
             </div>
             <input type="submit" value="Register" class="submit">
