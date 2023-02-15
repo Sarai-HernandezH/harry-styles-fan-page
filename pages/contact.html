@@ -6,35 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Contact</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico.jpg">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a class="logo" href="#"><img src="../img/h-logo.jpeg"></a>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./acting.html">Acting</a>
-                </li>
-                <li>
-                    <a href="./awards.html">Awards</a>
-                </li>
-                <li>
-                    <a href="./discography.html">Discography</a>
-                </li>
-                <li>
-                    <a href="./oned.html">One Direction</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact us</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-black"  >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://i.pinimg.com/originals/ea/22/de/ea22de380a879d4d4414842fc753a6f7.jpg" alt="logo" width="80" height="60" class="rounded">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Career
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../pages/acting.html">Acting</a></li>
+                            <li><a class="dropdown-item" href="../pages/awards.html">Awards</a></li>
+                            <li><a class="dropdown-item" href="../pages/discography.html">Discography</a></li>
+                            <li><a class="dropdown-item" href="../pages/oned.html">One Direction</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -121,5 +128,6 @@
             </section> 
             Author: Sarai Hernandez
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

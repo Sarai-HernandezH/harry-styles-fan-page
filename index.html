@@ -6,36 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>HS Fan Page</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico.jpg">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a class="logo" href="#"><img src="./img/h-logo.jpeg"></a>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./pages/acting.html">Acting</a>
-                </li>
-                <li>
-                    <a href="./pages/awards.html">Awards</a>
-                </li>
-                <li>
-                    <a href="./pages/discography.html">Discography</a>
-                </li>
-                <li>
-                    <a href="./pages/oned.html">One Direction</a>
-                </li>
-                <li>
-                    <a href="./pages/contact.html">Contact us</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-black " > 
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://i.pinimg.com/originals/ea/22/de/ea22de380a879d4d4414842fc753a6f7.jpg" alt="logo" width="80" height="60" class="rounded">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Career
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./pages/acting.html">Acting</a></li>
+                            <li><a class="dropdown-item" href="./pages/awards.html">Awards</a></li>
+                            <li><a class="dropdown-item" href="./pages/discography.html">Discography</a></li>
+                            <li><a class="dropdown-item" href="./pages/oned.html">One Direction</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -48,41 +55,68 @@
             </div>
     </main>
     </section>
-    <section class="introductionIndex">
-        <div class="single">
-            <h2 class="hSub"> His most recent Single</h2>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ElZ4-QKZUpo"title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>
-        </div>
-        <div class="movie">
-            <h2 class="hSub">Trailer of the last movie he starred in</h2>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xAEgWXOH1mY"title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>
-        </div>
-        <div class="paragraph">
-            <h2 class="hSub"> Welcome to Harry Styles Fan page!</h2>
-            <p class="paragraph">
+    <div class="container text-center">
+        <div class="row justify-content-between">
+            <div class="col-md-4 col-lg-5 ">
+                <div id="carouselIndex" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="0" class="active" aria-current="false" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xAEgWXOH1mY" title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>
+                            <div class="carousel-caption d-block p-2 bg-dark text-white">
+                                <h3 class="carousel description">My Policem trailer</h3>
+                                <P class="carousel description">Latest movie he starred on</P>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ElZ4-QKZUpo" title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>
+                            <div class="carousel-caption d-block p-2 bg-dark text-white">
+                                <h3 class="carousel description">Music for a Sushi Restaurant</h3>
+                                <P class="carousel description">Latest Single</P>
+                            </div>
+                        </div> 
+                        <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselIndex" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselIndex" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>       
+            <div class="col-md-4 col-lg-5">
+                <h2 class="hSub"> Welcome to Harry Styles Fan page!</h2>
+                <p class="paragraph">
                 Harry Styles, known by being kind, cheeky, humble, and super talented.
                 On this site you can get to know all about his career and achievments.
                 Get to know the path that led him to be the A list mega star that he has become at his young age.
                 From his early days to his increasing acting career,
                 if there is anything you want to know about him this is the place to find it!
-            </p>
-            <p class="paragraph">
+                </p>
+                <p class="paragraph">
                 Singer, song-writter, musician and actor. Harry Styles is one of the most popular artist at the moment.
                 His kind personality and his increible talent has led him to what seems to be a path to becoma a future
                 icon.
-            </p>
-            <p class="paragraph">
+                </p>
+                <p class="paragraph">
                 Did you know that it was his mom who convinced him to audition for the X-factor?
                 Harry has stated on previous interviews that he didn't feel prepared for such a big contest.
                 Fortunately 16 years old Styles decided to follow his mother advice and here we are now.
-            </p>
-            <p class="paragraph"> 
-                You can go to our 'Contact us' section and:
-                Subscribe to our site and be the first to know all the news about the artist.
-                Leave any subjections to better ourselves and improve.
-            </p>
+                </p>
+                <p class="paragraph"> 
+                    You can go to our 'Contact us' section and:
+                    Subscribe to our site and be the first to know all the news about the artist.
+                    Leave any subjections to better ourselves and improve.
+                </p>
+            </div>
         </div>
-    </section>
+    </div>
     <footer>
         <section class="internalLink">
         <div class="redes ig">
@@ -100,6 +134,7 @@
         </section>  
         Author: Sarai Hernandez
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>
