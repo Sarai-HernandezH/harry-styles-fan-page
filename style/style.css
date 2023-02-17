@@ -8,67 +8,434 @@
 body{
     font-family: 'Roboto', sans-serif !important;
     color: white !important;
-    font-size: 1.15rem !important;
     background-color: hwb(0 0% 100%) !important;
+    height: 100vh;
 }
 header{
-    margin: 0px 0px 50px 0px;
+    margin-bottom: 5px;
+    padding: 5px;
 }
-.navbar-expand-lg{
-    border-bottom: 4px solid rgba(237,127,214,1) !important;
+.navbar-expand-sm{
+    border-bottom: 2px solid rgba(237,127,214,1) !important;
 }
 .nav-link, .nav-item{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.20rem;
+    font-size: 0.80em;
     font-weight: bold;
-    padding: 10px;
+    padding: 5px;
     color: white !important;
 }
 .icon{
-    width: 64px;
-    height: 64px;
+    width: 30px;
+    height: 30px;
 }
 h1{
     font-family: 'Dancing Script', cursive;
-    font-size: 4rem !important;
+    font-size: 1.50rem !important;
     text-align: center;
     background: rgb(228,226,223);
     background: linear-gradient(0deg, rgba(228,226,223,1) 0%, rgba(237,127,214,1) 45%, rgba(167,6,176,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .hSub{
     text-align: center;
     text-decoration: underline;
-    font-size: 1.40rem;
+    font-size: 0.90em;
+    margin-top: 5px;
+    margin: 10px 15px;
+}
+.paragraph{
+    font-size: 0.75rem;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
     margin-top: 10px;
-    margin-bottom: 40px;
+}
+.indexCollage{
+    margin-left: 15px;
+}
+.mobileHidden{
+    display: none;
+}
+/*Multimedia*/
+
+img, iframe{
+    width: 300px;
+    height: 285px;
+    border-radius: 5px;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 /*     Navbar style */
 
+.rounded{
+    width: 30px;
+    height: 30px;
+}
 .logo{
-    width: 64px;
-    height: 64px;
+    width: 25px;
+    height: 25px;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-items: center;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
     padding-top: 5px;
+    padding-left: 5px;
 }
 a{
     text-decoration: none;
     color: white;
 }
-a:hover{
-    font-size: 1.30rem;
-    color: rgba(237,127,214,1) !important;
-    transition: 2s;
+/* Footer */
+
+.redes, .pageUp{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.internalLink{
+    display: grid;
+    grid-template-columns: 58px 58px 58px 58px;
+    grid-auto-rows: 80px;
+    column-gap: 2px;
+    justify-content: center;
+    margin: 10px 10px;
+}
+footer{
+    font-size: 0.90em;
+    font-weight: bold; 
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-top: 2px solid rgba(237,127,214,1) !important;  
+}
+/* Award and Acting page style */
+.gridAwards, .colActing{
+    margin: 10px;
+    padding: 5px;
+}
+.colAwards{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(237,127,214,1) !important;
+    border-radius: 5px !important;
+}
+/* Contact page style */
+.contactUs{
+    margin: 5px;
+    padding: 5px;
+}
+.legend{
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 5px;
+}
+#terms, .contact, .termsC, .hContact{
+    font-size: 0.70rem;
+    text-decoration: none !important;
+    color: white !important;
+    padding: 5px;
+}
+.submit{
+    font-size: 0.70rem;
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+    margin: 2px 5px 5px 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+/* Discography page Style */
+
+.sectionDisc{
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: "harry-styles"
+                            "fine-line"
+                            "harry-house";
+    justify-items: center;
+    row-gap: 20px;
+}
+.harry-styles{
+    grid-area: harry-styles;
+}
+.fine-line{
+    grid-area: fine-line;
+    margin-left: 35px;
+}
+.harry-house{
+    grid-area: harry-house;
+    margin-left: 35px;
+}
+/*Oned page Style*/
+
+.sectionOneD{
+    margin: 5px;
+    padding: 5px;
+}
+.col-oned{
+    margin: 10px 10px 10px 10px;
+    padding: 5px;
+    border: solid 2px rgba(237,127,214,1);
+    border-radius: 5px;
+}
+.pictures{
+    width: 200px;
+    height: 150px;
+    padding: 5px;
+    margin: 15px 40px 15px 40px;
+}
+.multimediaContainer{
+    margin-right: 30px;
+    margin-left: -15px;
+    padding-right: 40px;
+}
+.colMultimedia{
+    padding: 20px;
+    align-items: center;
+    margin-left: 80px;
+}
+@media (min-width: 576px) {
+    header{
+        margin-bottom: 25px;
+    }
+    h1{
+        font-size: 2rem !important;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .nav-link, .nav-item{
+        font-size: 0.95em;
+    }
+    .paragraph{
+        font-size: 0.85rem;
+    }
+    .hSub{
+        font-size: 1.10rem;
+    }
+    .icon{
+        width: 55px;
+        height: 55px;
+    }
+    .indexCollage{
+        margin-left: 100px;
+    }
+    /*Multimedia*/
+
+    img, iframe{
+        width: 500px;
+        height: 400px;
+    }
+    
+    /*     Navbar style */
+    .rounded{
+        width: 50px;
+        height: 50px;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    /* Footer */
+    
+    .redes, .pageUp{
+        margin: 25px;
+    }
+    .internalLink{
+        grid-template-columns: 120px 120px 120px 120px;
+        grid-auto-rows: 100px;
+        column-gap: 25px;
+        margin: 20px 20px;
+    }
+    footer{
+        font-size: 1.15rem;
+        margin-top: 15px;
+        margin-bottom: 10px;  
+    }
+    /* Acting page style */
+
+    .colActing{
+        display: flex !important;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .multim-acting{
+        padding-right: 150px;
+        margin-left: -50px;
+        width: 500px;
+        height: 315px;
+    }
+    /* Awards page style */
+
+    .gridAwards{
+        display: grid !important;
+        grid-template-columns: 150vh !important;
+        grid-template-areas: "oned"
+                            "oned-two"
+                            "harry-grammy";
+        padding-top: 50px;
+        padding-left: 110px;
+    }
+    .oned{
+        grid-area: oned;
+    }
+    .oned-two{
+        grid-area: oned-two;
+    }
+    .harry-grammy{
+        grid-area: harry-grammy;
+    }
+
+    /* Contact page style */
+    .contactUs{
+        margin: 35px;
+        padding: 35px;
+    }
+    .legend{
+        font-size: 0.95rem;
+        padding: 15px;
+    }
+    #terms, .contact, .termsC, .hContact{
+        font-size: 0.80rem;
+        padding: 15px;
+    }
+    .submit{
+        font-size: 0.80rem;
+        padding: 15px;
+        margin: 10px 10px 15px 40px;
+        border-radius: 5px;
+    }
+    /* Discography page Style */
+    
+    .sectionDisc{
+        grid-template-rows: 550px 550px 550px;
+        margin-top: 50px;
+    }
+    /*Oned page Style*/
+
+    .grid-oned{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-oned{
+        width: 600px !important;
+    }
+    .many{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr) ;
+        grid-template-rows: auto auto auto auto;
+        margin-right: 15px;
+    }
+    .pictures{
+        width: 200px;
+        height: 150px;
+        padding: 5px;
+        margin: 15px 40px 15px 40px;
+    } 
+    .multimediaContainer{
+        align-items: flex-start;
+        padding: 0px;
+    }
+    .colMultimedia{
+        padding: 20px;
+        align-items: flex-start;
+        margin-left: 0px;
+        width: 500px !important;
+    }
+}
+/* contact page */
+/*
+
+/*oned page*/
+/*
+.sectionOneD{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+}
+.pictures{
+    max-width: 70vw;
+    max-height: 120px;
+    margin: auto;
+}
+.many{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.colOneD{
+    margin: 20px 0px 20px 5px;
+    padding: 15px;
+    max-width: 80vw;
+    border: solid 2px #d6386d;
+}
+.colMultimedia{
+    margin: auto;
+}
+/*discography page*/
+/*
+.sectionDisc{
+    flex-direction: column;
+}
+.colDisc{
+    padding: auto;
+}
+/*acting page*/
+/*
+.sectionActing{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+/* awards page*/
+/*
+.sectionAwards{
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.harryGrammy{
+    width: 205px;
+    height: 200px;
+}
+
+/*footer */
+/*
+.redes, .pageUp{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.internalLink{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-auto-rows: 40px;
+    column-gap: 3px;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+footer{
+    border-top: none;
 }
 
 /* Contact Style  */
-
+/*
 .contactUs{
     margin: 50px 150px 50px 150px;
     padding: 50px 100px 50px 100px;
@@ -116,6 +483,7 @@ a:hover{
     transition: 2s;
 }
 /*   Index Style */
+/*
 .paragraph{
     text-align: justify;
 }
@@ -137,21 +505,10 @@ a:hover{
     object-position: bottom;
 }
 
-/*  Multimedia Style */
 
-iframe{
-    max-width: 100%;
-    margin-top: 10px;
-    margin-left: 25px;
-    margin-bottom: 15px;
-}
-img{
-    max-width: 100%;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-/*  oned Style */
 
+/*oned Style */
+/*
 .sectionOneD{
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -190,7 +547,7 @@ img{
     margin-left: 80px;
 }
 /* Discography Style */
-
+/*
 .sectionDisc{
     display: flex;
     flex-direction: row;
@@ -202,7 +559,7 @@ img{
     padding: 50px;
 }
 /* Acting Style */
-
+/*
 .sectionActing{
     text-align: justify;
     display: flex;
@@ -214,7 +571,7 @@ img{
     padding: 40px;
 }
 /* Award page style */
-
+/*
 .sectionAwards{
     text-align: justify;
     display: flex;
@@ -231,7 +588,7 @@ img{
     height: 400px;
 }
 /* Footer Style */
-
+/*
 .redes, .pageUp{
     margin: 10px;
     display: flex;
@@ -428,7 +785,7 @@ footer{
 
 /* responsive behaviour for mobile */
 /* index*/
-
+/*
 @media screen and (max-width: 821px) {
     header{
         border-bottom: none;
@@ -457,61 +814,12 @@ footer{
     }
     .hSub{
         font-size: 1rem;
-    }
-    .introductionIndex{
-        margin: 20px 0px 20px 0px;
-        grid-template-columns: 85vw;
-        grid-template-rows: 500px 315 315;
-        grid-template-areas: "paragraph"
-                            "single"
-                            "movie";
-        justify-content: center;
-        row-gap: 60px;
-    }
-    .icon{
-        width: 45px;
-        height: 45px;
-    }
-    /*multimedia */
 
-    iframe{
-        max-width: 70vw;
-    }
-    img{
-        max-width: 70vw;
-    }
-    .indexCollage{
-        max-width: 85vw;
-        max-height: 85vw;
-        margin-left: 15px;
-        margin-bottom: 30px;
-    }
 /* contact page */
+/*
 
-    .contactUs{
-        margin: 5px;
-        padding: 5px;
-    }
-    .legend{
-        font-size: 0.75rem;
-        padding: 5px;
-    }
-    .contact{
-        font-size: 0.65em;
-    }
-    .hContact{
-        font-size: 0.70em;
-    }
-    .termsC{
-        font-size: 0.65em;
-    }
-    .submit{
-        font-size: 0.60em;
-        padding: 5px;
-        margin: 2px 5px 5px 20px;
-    }
 /*oned page*/
-
+/*
 .sectionOneD{
     display: flex;
     flex-wrap: wrap;
@@ -539,7 +847,7 @@ footer{
     margin: auto;
 }
 /*discography page*/
-
+/*
 .sectionDisc{
     flex-direction: column;
 }
@@ -547,12 +855,14 @@ footer{
     padding: auto;
 }
 /*acting page*/
+/*
 .sectionActing{
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
 }
 /* awards page*/
+/*
 .sectionAwards{
     flex-direction: column;
     align-items: center;
@@ -564,6 +874,7 @@ footer{
 }
 
 /*footer */
+/*
 .redes, .pageUp{
     display: flex;
     flex-direction: column;
@@ -584,7 +895,7 @@ footer{
 }
 /* responsive behaviour for Tablet / Ipad devices*/
 /*Index*/
-
+/*
 
 @media screen and (min-width:822px) and (max-width:1180px) {
     header{
@@ -625,7 +936,7 @@ footer{
         justify-items: center;
     }
     /*multimedia */
-
+/*
     iframe{
         max-width: 410px;
         max-height: 415px;
@@ -641,7 +952,7 @@ footer{
         margin-bottom: 50px;
     }
 /* contact page */
-
+/*
     .contactUs{
         margin: 80px;
         margin-top: 40px;
@@ -666,7 +977,7 @@ footer{
         margin: 2px 25px 5px 40px;
     }
 /*oned page*/
-
+/*
 .sectionOneD{
     justify-items: center;
     grid-template-rows: auto;
@@ -693,7 +1004,7 @@ footer{
     padding: 5px;
 }
 /*Discography page*/
-
+/*
 .sectionDisc{
     flex-wrap: wrap;
 }
@@ -701,7 +1012,7 @@ footer{
     padding: auto;
 }
 /*Acting page*/
-
+/*
 .sectionActing{
     display: grid;
     grid-template-columns: 400px 400px;
@@ -710,7 +1021,7 @@ footer{
 
 }
 /* Awards page*/
-
+/*
 .sectionAwards{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -724,7 +1035,7 @@ footer{
 }
 
 /*footer */
-
+/*
 .redes, .pageUp{
     display: flex;
     flex-direction: column;
