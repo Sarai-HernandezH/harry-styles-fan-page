@@ -1,0 +1,21 @@
+@mixin paragraphs {
+    text-align: justify;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.paragraph{
+    @include paragraphs;
+}
+
+@mixin subtitles{
+    text-align: center;
+	text-decoration: underline;
+	margin: 10px 15px;
+}
+
+.hSub{
+    @include subtitles;
+}
