@@ -1,14 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap";
-@import "footer";
-
-$color_1: white;
-$color_2: black;
-$color_3: rgba(237,127,214,1);
-$font-family_1: 'Roboto', sans-serif;
-$font-family_2: 'Dancing Script', cursive;
-$background-color_1: hwb(0 0% 100%);
-$background-color_2: white;
+@import "variables";
 
 
 * {
@@ -24,27 +16,6 @@ body {
 header {
 	margin-bottom: 5px;
 	width: 100%;
-}
-
-/* Navbar */
-
-.navbar-expand-sm{
-    border-bottom: 2px solid $color_3;
-    .nav-link, .nav-item{
-        font-family: $font-family_1 !important;
-        font-size: 0.80em;
-        font-weight: bold;
-        color: $color_1;
-        padding: 5px;
-        a{
-        text-decoration: none;
-        color: $color_1;
-        }
-        .rounded {
-            width: 30px;
-            height: 30px;
-        }
-    }
 }
 h1 {
 	font-family: $font-family_2;
@@ -69,6 +40,26 @@ h1 {
 	flex-wrap: wrap;
 	padding: 5px;
 	margin-top: 10px;
+}
+/* Navbar */
+
+.rounded {
+    width: 30px;
+    height: 30px;
+}
+.navbar-expand-sm{
+    border-bottom: 2px solid $color_3;
+    .nav-link, .nav-item{
+        font-family: $font-family_1 !important;
+        font-weight: bold;
+        color: $color_1;
+        padding: 5px;
+        a{
+        font-size: 0.80em;
+        text-decoration: none;
+        color: $color_1;
+        }
+    }
 }
 /* Multimedia */
 
@@ -105,15 +96,13 @@ footer {
             justify-content: space-evenly;
             align-items: center;
             margin: 10px;
-        }
-        .icon {
-            width: 30px;
-            height: 30px;
+            .icon {
+                width: 30px;
+                height: 30px;
+            }
         }    
     }
 }
-
-
 /* Awards and Acting */
 
 .row-acting{
@@ -141,9 +130,9 @@ footer {
         grid-area: harry-grammy;
     }
     .col-awards {
-        width: 350px !important;
+        width: 350px;
         border: 2px solid $color_3 !important;
-        border-radius: 5px !important;
+        border-radius: 5px;
         padding: 10px;
         margin-bottom: 10px;
     }
@@ -174,6 +163,8 @@ footer {
             margin: 2px 5px 5px 20px;
         }
 }
+/* Discography */
+
 .section-disc {
 	display: grid !important;
 	grid-template-columns: repeat(1, 3fr);
@@ -196,12 +187,12 @@ footer {
         justify-items: center;
     }
 }
-
+/* Oned */
 .section-oned {
 	margin: 5px;
 	padding: 5px;
     .grid-oned {
-        display: grid !important;
+        display: grid;
         grid-template-columns: auto;
         grid-template-areas: "col-one"
                             "col-two"
@@ -220,7 +211,7 @@ footer {
         .col-oned {
             border: solid 2px $color_3;
             border-radius: 5px;
-            width: 350px !important;
+            width: 350px;
         }
         .pictures {
             width: 200px;
@@ -235,348 +226,670 @@ footer {
 	flex-direction: column;
 	align-items: center;
     .col-multimedia {
-        width: 350px !important;
+        width: 350px;
     }
 }
 @media (min-width: 576px) {
-	header {
-		margin-bottom: 25px;
-	}
-	.rounded {
-		width: 45px;
-		height: 45px;
-	}
-    .nav-link, .nav-item{
-        font-size: 0.86em !important;
+    header {
+        margin-bottom: 25px;
     }
-	.hSub {
-		font-size: 1em;
-	}
-	.paragraph {
-		font-size: 0.80rem;
-	}
-	img {
-		width: 500px;
-		height: 315px;
-	}
-	iframe {
-		width: 500px;
-		height: 315px;
-	}
-	.index-rows {
-		display: grid !important;
-		grid-template-columns: auto;
-		grid-template-areas: "welcome" "videos";
-		row-gap: 50px;
-		margin-bottom: 40px;
-	}
-	.welcome {
-		grid-area: welcome;
-	}
-	.videos {
-		grid-area: videos;
-	}
-	.index-col {
-		width: 500px !important;
-	}
-	.row-acting {
-		display: flex !important;
-		flex-wrap: wrap;
-		flex-direction: column;
-		align-items: center;
-	}
-	.col-acting {
-		width: 480px !important;
-	}
-	.col-awards {
-		width: 560px !important;
-	}
-	.contact-us {
-		margin: 25px;
-		padding: 25px;
-	}
-	.legend {
-		font-size: 0.78rem;
-		padding: 15px;
-	}
-	#terms {
-		font-size: 0.70rem;
-		padding: 15px;
-	}
-	.contact {
-		font-size: 0.70rem;
-		padding: 15px;
-	}
-	.terms-c {
-		font-size: 0.70rem;
-		padding: 15px;
-	}
-	.h-contact {
-		font-size: 0.70rem;
-		padding: 15px;
-	}
-	.submit {
-		font-size: 0.70rem;
-		padding: 10px;
-		margin: 10px 10px 15px 40px;
-	}
-	.section-disc {
-		grid-template-rows: 550px 550px 550px;
-		margin-top: 50px;
-	}
-	.i-disc {
-		min-height: 360px !important;
-	}
-	.col-oned {
-		width: 550px !important;
-	}
-	.many {
-		display: grid;
-		grid-template-columns: repeat(2, 2fr);
-		grid-template-rows: auto auto auto auto;
-	}
-	.pictures {
-		width: 200px;
-		height: 150px;
-		padding: 5px;
-		margin: 15px 40px 15px 40px;
-	}
-	.col-multimedia {
-		width: 400px !important;
-	}
-	.video-oned {
-		width: 385px !important;
-		height: 315px !important;
-	}
+    .hSub {
+        font-size: 1em;
+    }
+    .paragraph {
+        font-size: 0.80em;
+    }
+/* Navbar */
+    
+    .rounded {
+        width: 45px;
+        height: 45px;
+    }
+    a{
+        font-size: 0.86em;
+    }    
+/* Multimedia */
+    
+    img, iframe {
+        width: 500px;
+        height: 315px;
+    }
+/* Footer */
+    
+    footer {
+        font-size: 0.80em;
+        margin-top: 15px;
+        .internalLink {
+            display: grid;
+            grid-template-columns: 120px 120px 120px 120px;
+            grid-auto-rows: 100px;
+            column-gap: 25px;
+            margin: 20px 20px;
+            .redes, .pageUp {
+                margin: 25px;
+                .icon {
+                    width: 45px;
+                    height: 45px;
+                }    
+            }
+        }
+    }
+    
+/* Index */
+    
+    .index-rows{
+        display: grid !important ;
+        grid-template-columns: auto;
+        grid-template-areas: "welcome"
+                            "videos";
+        row-gap: 50px;
+        margin-bottom: 40px;
+        .welcome{
+            grid-area: welcome;
+        }
+        .videos{
+            grid-area: videos;
+        }
+        .index-col{
+            width: 500px;
+        }
+    }
+/* Acting */
+    
+    .row-acting{
+        display: flex !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        .col-acting{
+            width: 480px;
+        }
+    }
+/* Awards */
+    
+    .col-awards {
+        width: 560px !important;
+    }
+/* Contact */
+    
+    .contact-us {
+        margin: 25px;
+        padding: 25px;
+        .legend {
+            font-size: 0.78rem;
+            padding: 15px;
+        }
+        .contact, .h-contact, .terms-c, #terms {
+            font-size: 0.70rem;
+            padding: 15px;
+        }
+        .submit {
+            font-size: 0.70rem;
+            padding: 15px;
+        }
+    }
+/* Discography */
+    
+    .section-disc {
+        grid-template-rows: 550px 550px 550px;
+        margin-top: 50px;
+        .i-disc{
+            min-height: 360px;
+            }
+    }
+/* Oned */
+    
+    .col-oned {
+        width: 550px !important;
+        .pictures{
+            width: 200px;
+            height: 150px;
+            padding: 5px;
+            margin: 15px 40px 15px 40px;
+        }
+        .many{
+            display: grid;
+            grid-template-columns: repeat(2, 2fr) ;
+            grid-template-rows: auto auto auto auto;
+        }
+    }
+    .col-multimedia {
+        width: 400px;
+        .video-oned{
+            width: 385px;
+            height: 315px;
+        }
+    }
 }
 @media (min-width: 768px) {
-	header {
-		margin-bottom: 35px;
-	}
-    .nav-link, .nav-item{
+    header {
+        margin-bottom: 35px;
+    }
+    h1{
+        font-size: 1.70em !important;
+    }
+    .hSub {
+        font-size: 1.10em;
+    }
+    .paragraph {
+        font-size: 0.85rem;
+    }
+/* Navbar */
+    
+    a{
         font-size: 0.95em !important;
-    }  
-	h1 {
-		font-size: 1.70em !important;
-	}
-	.hSub {
-		font-size: 1.10em;
-	}
-	.paragraph {
-		font-size: 0.85rem;
-	}
-	img {
-		width: 600px;
-	}
-	iframe {
-		width: 600px;
-	}
-	.index-col {
-		width: 650px !important;
-	}
-	.col-acting {
-		width: 600px !important;
-	}
-	.col-awards {
-		width: 660px !important;
-	}
-	.contact-us {
-		margin: 30px;
-		padding: 60px;
-	}
-	.legend {
-		font-size: 0.90rem;
-		padding: 20px;
-	}
-	#terms {
-		font-size: 0.90rem;
-		padding: 10px;
-	}
-	.contact {
-		font-size: 0.90rem;
-		padding: 10px;
-	}
-	.terms-c {
-		font-size: 0.90rem;
-		padding: 10px;
-	}
-	.h-contact {
-		font-size: 0.90rem;
-		padding: 10px;
-	}
-	.submit {
-		font-size: 0.80rem;
-		margin: 20px 25px 20px 30px;
-	}
-	.section-disc {
-		display: flex !important;
-		flex-wrap: wrap;
-		row-gap: 20px;
-		justify-content: space-evenly;
-		margin-top: 10px;
-		margin-bottom: 10px;
-		height: 1400px !important;
-	}
-	.i-disc {
-		width: 350px !important;
-		height: 380px !important;
-		margin-top: 0px;
-	}
-	.col-oned {
-		width: 650px !important;
-	}
-	.pictures {
-		width: 280px;
-		height: 225px;
-		margin: 15px 20px 15px 20px;
-	}
-	.col-multimedia {
-		width: 600px !important;
-	}
-	.video-oned {
-		width: 560px !important;
-	}
+    }
+/* Multimedia */
+    
+    img, iframe {
+        width: 600px;
+    }
+/* Footer */
+    
+    footer {
+        font-size: 1em;
+        .internalLink {
+            display: grid;
+            grid-template-columns: 130px 130px 130px 130px;
+            .redes, .pageUp {
+                margin: 30px;
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                }
+            }    
+        }   
+    }
+/* Index */
+    
+    .index-col{
+        width: 650px;
+    }
+/* Acting */
+    
+    .col-acting{
+        width: 600px !important;
+    }
+/* Awards */
+    
+    .col-awards {
+        width: 600px !important;
+    }
+/* Contact */
+    
+    .contact-us {
+        margin: 30px;
+        padding: 60px;
+        .legend {
+            font-size: 0.90rem;
+            padding: 20px;
+        }
+        .contact, .h-contact, .terms-c, #terms {
+            font-size: 0.90rem;
+            padding: 10px;
+        }
+        .submit {
+            font-size: 0.80rem;
+            margin: 20px 25px 20px 30px;
+        }
+    }
+/* Discography */
+    
+.section-disc {
+    display: flex !important;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1400px;   
+    .i-disc {
+        width: 350px;
+        height: 380px;
+        margin-top: 0px;
+        }
+    }
+/* Oned */
+    
+    .col-oned {
+        width: 650px !important;
+    .pictures{
+        width: 280px;
+        height: 225px;
+        margin: 15px 20px 15px 20px;
+        }
+    }
+    .col-multimedia {
+        width: 600px !important;
+        .video-oned{
+            width: 560px !important;
+        }
+    }
 }
 @media (min-width: 992px) {
-	.rounded {
-		width: 60px;
-		height: 55px;
-	}
-    .nav-link, .nav-item{
-        font-size: 1.15em !important;
-    } 
-	h1 {
-		font-size: 1.90em !important;
-	}
-	.hSub {
-		font-size: 1.30em;
-	}
-	.paragraph {
-		font-size: 0.95rem;
-	}
-	img {
-		width: 750px;
-	}
-	iframe {
-		width: 750px;
-	}
-	.index-col {
-		width: 700px !important;
-	}
-	.row-acting {
-		flex-direction: row;
-		column-gap: 60px;
-		justify-content: center;
-	}
-	.col-acting {
-		width: 400px !important;
-	}
-	.multim-acting {
-		width: 415px;
-		height: 350px;
-	}
-	.col-awards {
-		width: 800px !important;
-	}
-	.harry-grammy-award {
-		height: 400px !important;
-	}
-	.legend {
-		font-size: 1.05rem;
-	}
-	#terms {
-		font-size: 1rem;
-	}
-	.contact {
-		font-size: 1rem;
-	}
-	.terms-c {
-		font-size: 1rem;
-	}
-	.h-contact {
-		font-size: 1rem;
-	}
-	.submit {
-		font-size: 0.95rem;
-	}
-	.section-disc {
-		height: 1000px !important;
-	}
-	.col-disc {
-		width: 400px;
-		height: 400px;
-	}
-	.col-oned {
-		width: 850px !important;
-		margin-bottom: 40px;
-	}
-	.many {
-		margin-left: 70px;
-	}
-	.pictures {
-		width: 300px;
-		height: 250px;
-		margin: 15px 20px 15px 20px;
-	}
-	.col-multimedia {
-		display: grid !important;
-		grid-template-columns: 400px 400px;
-		grid-template-rows: 450px 450px 450px;
-		justify-content: center;
-		column-gap: 50px;
-		padding-bottom: 40px;
-		padding-top: 50px;
-	}
-	.video-oned {
-		width: 415px !important;
-		height: 315px !important;
-	}
+    h1{
+        font-size: 2.25rem !important;
+    }
+    .hSub {
+        font-size: 1.30em;
+    }
+    .paragraph {
+        font-size: 0.95rem;
+    }
+/* Navbar */
+
+    .rounded{
+        width: 60px;
+        height: 55px;   
+    }
+    a{
+        font-size: 1.10em !important;
+    }
+/* Multimedia */
+
+    img, iframe {
+        width: 750px;
+    }
+/* Footer */
+
+    footer {
+        font-size: 1.20em;
+        .icon {
+            width: 60px;
+            height: 60px;
+        }
+    }    
+/* Index */
+
+    .index-col{
+        width: 700px;
+    }
+/* Acting */
+
+    .row-acting{
+        flex-direction: row;
+        column-gap: 60px;
+        justify-content: center;
+        .col-acting{
+            width: 400px !important;
+            .multim-acting{
+                width: 415px !important;
+                height: 350px !important;
+            }
+        }
+    }
+/* Awards */
+
+    .col-awards{
+        width: 650px !important;
+        .b-awards, .t-awards, .harry-grammy-award{
+            width: 600px;
+            height: 400px;
+        }
+    }
+/* Contact */
+
+    .legend {
+        font-size: 1.05rem;
+    }
+    .contact, .h-contact, .terms-c, #terms {
+        font-size: 1rem;
+    }
+    .submit {
+        font-size: 0.95rem;
+    }
+/* Discography */
+
+.section-disc {
+        height: 1000px;   
+        .col-disc {
+            width: 400px;
+            height: 400px;
+        }
+    }
+/* Oned */
+
+    .col-oned {
+        width: 850px !important;
+        margin-bottom: 40px;
+        .pictures {
+            width: 280px;
+            height: 225px;
+            margin: 15px 20px 15px 20px;
+        }
+        .many {
+            margin-left: 180px;
+        }
+    }
+    .col-multimedia {
+        display: grid !important;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 450px 450px 450px;
+        justify-content: center;
+        column-gap: 50px;
+        padding-bottom: 40px;
+        padding-top: 50px;
+        .video-oned{
+            width: 415px !important;
+            height: 315px !important;
+        }
+    }
 }
 @media (min-width: 1200px) {
-	header {
-		max-width: 100vw;
-	}
-    a {
-		&:hover {
-			font-size: 1.30em !important;
-			color: $color_3 !important;
-			transition: 2s;
-		}
-	}
-	main {
-		width: 85vw !important;
-	}
-	.index-rows {
-		display: grid !important;
-		grid-template-columns: auto;
-		grid-template-areas: "welcome videos";
-		grid-template-rows: 300px 300px;
-		row-gap: 50px;
-		margin-top: 25px;
-		margin-bottom: 25px;
-	    .welcome {
-		    grid-area: welcome;
-    	}
-	    .videos {
-		    grid-area: videos;
-	    }
+	header{
+        max-width: 100vw;
     }
-	.paragraph {
-	font-size: 1rem;
+    main{
+        width: 85vw !important;
     }
-	.index-col {
-		width: 400px !important;
-	}
-	.rounded {
-		width: 80px;
-		height: 60px;
-	}
-	img {
-		width: 750px;
-		height: 380px;
-	}
-	iframe {
-		width: 750px;
-		height: 380px;
-	}
-}
+    .paragraph{
+        font-size: 1rem;
+    }
+/* Navbar */
+    .rounded{
+        width: 80px;
+        height: 60px;
+    }
+    a:hover{
+        font-size: 1.30em !important ;
+        color: #ed7fd6 !important;
+        transition: 2s !important;
+    }
+/* Multimedia */
+    
+    img, iframe {
+        width: 750px;
+        height:380px;
+    }
+/* Footer */
+    
+    footer {
+        .internalLink {
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-auto-rows: 100px;
+            column-gap: 25px;
+            .ig {
+                animation: bounce 10s;
+            } 
+            .tw {
+                animation: bounce1 10s;
+            }
+            .of {
+                animation: bounce2 10s;
+            }
+            .pageUp {
+                    animation: bounce3 10s;;
+            }   
+        }
+    }
+@keyframes bounce{
+    0% {
+        transform:translatey(-100%);
+        opacity: 0;
+        }
+    15% {
+        transform:translateY(0);
+        padding-bottom: 5px;
+        }
+    30% {
+        transform:translateY(-50%);
+        }
+    40% {
+        transform:translateY(0%);
+        padding-bottom: 6px;
+        }
+    50% {
+        transform:translateY(-30%);
+        }
+    70% {
+        transform:translateY(0%);
+        padding-bottom: 7px;
+        }
+    80% {
+        transform:translateY(-15%);
+        }
+    90% {
+        transform:translateY(0%);
+        padding-bottom: 8px;
+        }
+    95% {
+        transform:translateY(-7%);
+        }
+    100% {
+        transform:translateY(0);
+        padding-bottom: 9px;
+        opacity: 1;
+        }
+    }
+@keyframes bounce1{
+    3% {
+        transform:translatey(-100%);
+        opacity: 0;
+        }
+    18% {
+        transform:translateY(0);
+        padding-bottom: 5px;
+        }
+    33% {
+        transform:translateY(-50%);
+        }
+    43% {
+        transform:translateY(0%);
+        padding-bottom: 6px;
+        }
+    53% {
+        transform:translateY(-30%);
+        }
+    73% {
+        transform:translateY(0%);
+        padding-bottom: 7px;
+        }
+    83% {
+        transform:translateY(-15%);
+        }
+    90% {
+        transform:translateY(0%);
+        padding-bottom: 8px;
+        }
+    95% {
+        transform:translateY(-7%);
+        }
+    100% {
+        transform:translateY(0);
+        padding-bottom: 9px;
+        opacity: 1;
+        }
+    }
+@keyframes bounce2{
+    6% {
+        transform:translatey(-100%);
+        opacity: 0;
+        }
+    21% {
+        transform:translateY(0);
+        padding-bottom: 5px;
+        }
+    36% {
+        transform:translateY(-50%);
+        }
+    46% {
+        transform:translateY(0%);
+        padding-bottom: 6px;
+        }
+    56% {
+        transform:translateY(-30%);
+        }
+    76% {
+        transform:translateY(0%);
+        padding-bottom: 7px;
+        }
+    86% {
+        transform:translateY(-15%);
+        }
+    90% {
+        transform:translateY(0%);
+        padding-bottom: 8px;
+        }
+    95% {
+        transform:translateY(-7%);
+        }
+    100% {
+        transform:translateY(0);
+        padding-bottom: 9px;
+        opacity: 1;
+        }
+    }
+@keyframes bounce3{
+    9% {
+        transform:translatey(-100%);
+        opacity: 0;
+        }
+    24% {
+        transform:translateY(0);
+        padding-bottom: 5px;
+        }
+    39% {
+        transform:translateY(-50%);
+        }
+    49% {
+        transform:translateY(0%);
+        padding-bottom: 6px;
+        }
+    59% {
+        transform:translateY(-30%);
+        }
+    79% {
+        transform:translateY(0%);
+        padding-bottom: 7px;
+        }
+    89% {
+        transform:translateY(-15%);
+        }
+    90% {
+        transform:translateY(0%);
+        padding-bottom: 8px;
+        }
+    95% {
+        transform:translateY(-7%);
+        }
+    100% {
+        transform:translateY(0);
+        padding-bottom: 9px;
+        opacity: 1;
+        }
+    }
+/* Index */
+    
+    .index-rows{
+            display: grid !important;
+            grid-template-columns: auto;
+            grid-template-areas: "welcome videos";
+            grid-template-rows: 500px;
+            padding-top: 50px;
+            .welcome{
+                grid-area: welcome;
+            }
+            .videos{
+                grid-area: videos;
+                .index-col{
+                    width: 600px !important;
+                }
+            }
+        }   
+/* Acting */
+    
+    .row-acting{
+            display: grid !important;
+            grid-template-areas: "dunkirk eternals"
+                                "dwd mp";
+            grid-template-columns: 500px 500px;
+            grid-template-rows: 700px;
+            justify-items: center;
+            .dunkirk{
+                grid-area: dunkirk;
+            }
+            .eternals{
+                grid-area: eternals;
+            }
+            .dwd{
+                grid-area: dwd;
+            }
+            .mp{
+                grid-area: mp;
+                .col-acting{
+                    width: 400px !important;
+                }
+            }
+    }
+    .multim-acting{
+        width: 415px !important;
+        height: 350px !important;
+    }
+/* Awards */
+    .grid-awards{
+        display: flex !important;
+        flex-direction: row;
+        text-align: justify;
+        justify-content: space-evenly;
+        .col-awards {
+            width: 420px !important;
+            .b-awards, .t-awards, .harry-grammy-award{
+                width: 380px !important;
+            }
+        }   
+    }
+/* Contact */
+    
+    .contact-us{
+            margin-left: 60px;
+            margin-right: 60px;
+            padding-left: 120px;
+            padding-right: 120;
+            .legend {
+                font-size: 1.15rem;
+            }
+            .contact, .h-contact, .terms-c, #terms {
+            font-size: 1.15rem;
+            }
+            .submit {
+                font-size: 1.05rem;
+            }
+    }
+/* Discography */
+    
+    .section-disc {
+        height: 500px;   
+    }
+/* Oned */
+    
+    .grid-oned{
+        display: flex !important ;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        justify-content: space-evenly;
+        }
+        .col-oned {
+            width: 420px !important;
+            margin-bottom: 10px;
+            padding: 15px;
+            .pictures{
+                width: 300px !important;
+                height: 250px !important;
+                margin: 15px 20px 15px 20px;
+            }
+            .many{
+                display: flex !important;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: flex-end;
+            }
+        }
+    .col-multimedia {
+        grid-template-columns: 600px 600px;
+        .video-oned{
+            width: 560px !important;
+            height: 415px !important;
+            }
+        }
+    }
