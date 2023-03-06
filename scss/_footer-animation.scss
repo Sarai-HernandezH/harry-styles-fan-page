@@ -1,0 +1,186 @@
+@media screen and (min-width:1200px){
+    footer {
+        font-size: 1.20em !important;
+        .internalLink {
+            grid-template-columns: 100px 100px 100px 100px !important;
+            grid-auto-rows: 100px !important;
+            column-gap: 25px !important;
+            .redes, .pageUp{
+                margin: 35px;
+                .icon {
+                    width: 60px !important;
+                    height: 60px !important;
+                    margin-top: 10px !important;
+                }
+            }
+            .ig {
+                animation: bounce 10s;
+            } 
+            .tw {
+                animation: bounce1 10s;
+            }
+            .of {
+                animation: bounce2 10s;
+            }
+            .pageUp {
+                animation: bounce3 10s;;
+            }
+        }
+    }
+@keyframes bounce{
+    0% {
+        transform:translatey(-100%);
+        opacity: 0;
+        }
+    15% {
+        transform:translateY(0);
+        padding-bottom: 5px;
+        }
+    30% {
+        transform:translateY(-50%);
+        }
+    40% {
+        transform:translateY(0%);
+        padding-bottom: 6px;
+        }
+    50% {
+        transform:translateY(-30%);
+        }
+    70% {
+        transform:translateY(0%);
+        padding-bottom: 7px;
+        }
+    80% {
+        transform:translateY(-15%);
+        }
+    90% {
+        transform:translateY(0%);
+        padding-bottom: 8px;
+        }
+    95% {
+        transform:translateY(-7%);
+        }
+    100% {
+        transform:translateY(0);
+        padding-bottom: 9px;
+        opacity: 1;
+        }
+    }
+@keyframes bounce1{
+    3% {
+        transform:translatey(-100%);
+        opacity: 0;
+        }
+    18% {
+        transform:translateY(0);
+        padding-bottom: 5px;
+        }
+    33% {
+        transform:translateY(-50%);
+        }
+    43% {
+        transform:translateY(0%);
+        padding-bottom: 6px;
+        }
+    53% {
+        transform:translateY(-30%);
+        }
+    73% {
+        transform:translateY(0%);
+        padding-bottom: 7px;
+        }
+    83% {
+        transform:translateY(-15%);
+        }
+    90% {
+        transform:translateY(0%);
+        padding-bottom: 8px;
+        }
+    95% {
+        transform:translateY(-7%);
+        }
+    100% {
+        transform:translateY(0);
+        padding-bottom: 9px;
+        opacity: 1;
+        }
+    }
+@keyframes bounce2{
+    6% {
+        transform:translatey(-100%);
+        opacity: 0;
+        }
+    21% {
+        transform:translateY(0);
+        padding-bottom: 5px;
+        }
+    36% {
+        transform:translateY(-50%);
+        }
+    46% {
+        transform:translateY(0%);
+        padding-bottom: 6px;
+        }
+    56% {
+        transform:translateY(-30%);
+        }
+    76% {
+        transform:translateY(0%);
+        padding-bottom: 7px;
+        }
+    86% {
+        transform:translateY(-15%);
+        }
+    90% {
+        transform:translateY(0%);
+        padding-bottom: 8px;
+        }
+    95% {
+        transform:translateY(-7%);
+        }
+    100% {
+        transform:translateY(0);
+        padding-bottom: 9px;
+        opacity: 1;
+        }
+    }
+@keyframes bounce3{
+    9% {
+        transform:translatey(-100%);
+        opacity: 0;
+        }
+    24% {
+        transform:translateY(0);
+        padding-bottom: 5px;
+        }
+    39% {
+        transform:translateY(-50%);
+        }
+    49% {
+        transform:translateY(0%);
+        padding-bottom: 6px;
+        }
+    59% {
+        transform:translateY(-30%);
+        }
+    79% {
+        transform:translateY(0%);
+        padding-bottom: 7px;
+        }
+    89% {
+        transform:translateY(-15%);
+        }
+    90% {
+        transform:translateY(0%);
+        padding-bottom: 8px;
+        }
+    95% {
+        transform:translateY(-7%);
+        }
+    100% {
+        transform:translateY(0);
+        padding-bottom: 9px;
+        opacity: 1;
+        }
+    }
+}
