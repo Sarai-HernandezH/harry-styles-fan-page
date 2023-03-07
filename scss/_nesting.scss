@@ -1,0 +1,60 @@
+.navbar-expand-sm{
+    border-bottom: 2px solid $color_3;
+    .nav-link, .nav-item{
+        font-family: $font-family_1;
+        font-weight: bold;
+        color: $color_1;
+        padding: 5px;
+        a {
+            font-size: 1rem;
+            text-decoration: none;
+            color: $color_1;
+        }
+    }
+}
+@media screen and (min-width: 576px) and (max-width:768px) {
+    .navbar-expand-sm {
+        .nav-link, .nav-item {
+            a {
+                font-size: 1.15rem;
+            
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width:992px) {
+    .navbar-expand-sm{
+        .nav-link, .nav-item{
+            a{
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    .navbar-expand-sm{
+        .nav-link, .nav-item{
+            a{
+                font-size: 1.35rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .navbar-expand-sm{
+        .nav-link, .nav-item{
+            a{
+                font-size: 1.45rem;
+            }
+        }
+    }
+/* no fue posible que agarrara el hover usando nesting,
+    ni los cambios sin usar el !important */
+a:hover {
+    transition: font-size 3s !important;
+    font-size: 1.65rem !important;
+    color: $color_3 !important;
+}
+}
+
+

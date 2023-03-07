@@ -20,11 +20,11 @@ footer .internalLink .redes, footer .internalLink .pageUp {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin: 10px;
+  margin: 15px;
 }
 footer .internalLink .redes .icon, footer .internalLink .pageUp .icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -266,7 +266,7 @@ footer .internalLink .redes .icon, footer .internalLink .pageUp .icon {
   }
 }
 .index-collage {
-  display: flex !important;
+  display: flex;
   justify-content: center;
 }
 
@@ -276,7 +276,7 @@ h1 {
   background: linear-gradient(0deg, rgb(228, 226, 223) 0%, rgb(237, 127, 214) 45%, rgb(167, 6, 176) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 20px 20px !important;
+  padding: 20px 20px;
 }
 
 .paragraph {
@@ -293,15 +293,58 @@ h1 {
   margin: 10px 15px;
 }
 
+.navbar-expand-sm {
+  border-bottom: 2px solid #ed7fd6;
+}
+.navbar-expand-sm .nav-link, .navbar-expand-sm .nav-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 5px;
+}
+.navbar-expand-sm .nav-link a, .navbar-expand-sm .nav-item a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .navbar-expand-sm .nav-link a, .navbar-expand-sm .nav-item a {
+    font-size: 1.15rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .navbar-expand-sm .nav-link a, .navbar-expand-sm .nav-item a {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar-expand-sm .nav-link a, .navbar-expand-sm .nav-item a {
+    font-size: 1.35rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar-expand-sm .nav-link a, .navbar-expand-sm .nav-item a {
+    font-size: 1.45rem;
+  }
+  /* no fue posible que agarrara el hover usando nesting,
+      ni los cambios sin usar el !important */
+  a:hover {
+    transition: font-size 3s !important;
+    font-size: 1.65rem !important;
+    color: #ed7fd6 !important;
+  }
+}
 * {
   padding: 0px;
   margin: 0px;
 }
 
+/* No importa lo que intentara el body no toma los cambios si no uso !important */
 body {
-  font-family: "Roboto", sans-serif;
-  color: #ffffff;
-  background-color: white;
+  font-family: "Roboto", sans-serif !important;
+  color: #ffffff !important;
+  background-color: #000000 !important;
   min-height: 100vh;
 }
 
@@ -310,8 +353,12 @@ header {
   width: 100%;
 }
 
+h1 {
+  font-size: 1.45rem;
+}
+
 .hSub {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
 }
 
 .paragraph {
@@ -327,23 +374,8 @@ header {
 
 /* Navbar */
 .rounded {
-  width: 30px;
-  height: 30px;
-}
-
-.navbar-expand-sm {
-  border-bottom: 2px solid #ed7fd6;
-}
-.navbar-expand-sm .nav-link, .navbar-expand-sm .nav-item {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  color: #ffffff;
-  padding: 5px;
-}
-.navbar-expand-sm .nav-link a, .navbar-expand-sm .nav-item a {
-  font-size: 0.8em;
-  text-decoration: none;
-  color: #ffffff;
+  width: 40px;
+  height: 40px;
 }
 
 /* Multimedia */
@@ -364,7 +396,7 @@ img, iframe {
 }
 
 .col-awards {
-  border: 2px solid #ed7fd6 !important;
+  border: 2px solid #ed7fd6;
   border-radius: 5px;
   margin: 15px;
 }
@@ -378,18 +410,18 @@ img, iframe {
   padding: 10px;
 }
 .contact-us .legend {
-  font-size: 0.68rem;
+  font-size: 1.15rem;
   font-weight: bold;
   text-align: center;
 }
 .contact-us .contact, .contact-us .h-contact, .contact-us .terms-c, .contact-us #terms {
-  font-size: 0.65rem;
-  text-decoration: none !important;
-  color: #ffffff !important;
+  font-size: 1.05rem;
+  text-decoration: none;
+  color: #ffffff;
   padding: 5px;
 }
 .contact-us .submit {
-  font-size: 0.65rem;
+  font-size: 1rem;
   font-weight: bold;
   color: black;
   background-color: white;
@@ -426,18 +458,15 @@ img, iframe {
     margin-bottom: 25px;
   }
   .hSub {
-    font-size: 1em;
+    font-size: 1.45rem;
   }
   .paragraph {
-    font-size: 0.8em;
+    font-size: 1.1rem;
   }
   /* Navbar */
   .rounded {
-    width: 45px;
-    height: 45px;
-  }
-  a {
-    font-size: 0.86em;
+    width: 50px;
+    height: 50px;
   }
   /* Multimedia */
   img, iframe {
@@ -488,15 +517,15 @@ img, iframe {
     padding: 25px;
   }
   .contact-us .legend {
-    font-size: 0.78rem;
+    font-size: 1.25rem;
     padding: 15px;
   }
   .contact-us .contact, .contact-us .h-contact, .contact-us .terms-c, .contact-us #terms {
-    font-size: 0.7rem;
+    font-size: 1.15rem;
     padding: 15px;
   }
   .contact-us .submit {
-    font-size: 0.7rem;
+    font-size: 1.05rem;
     padding: 15px;
   }
   /* Discography */
@@ -545,18 +574,15 @@ img, iframe {
     margin-bottom: 35px;
   }
   .hSub {
-    font-size: 1.1em;
+    font-size: 1.5rem;
   }
   .paragraph {
-    font-size: 0.85rem;
+    font-size: 1.2rem;
   }
   /* Navbar */
   .rounded {
     width: 55px;
     height: 55px;
-  }
-  a {
-    font-size: 0.95em !important;
   }
   /* Multimedia */
   img, iframe {
@@ -607,15 +633,15 @@ img, iframe {
     padding: 30px;
   }
   .contact-us .legend {
-    font-size: 0.9rem;
+    font-size: 1.35rem;
     padding: 20px;
   }
   .contact-us .contact, .contact-us .h-contact, .contact-us .terms-c, .contact-us #terms {
-    font-size: 0.9rem;
+    font-size: 1.25rem;
     padding: 10px;
   }
   .contact-us .submit {
-    font-size: 0.8rem;
+    font-size: 1.15rem;
     margin: 20px 25px 20px 30px;
   }
   /* Discography */
@@ -682,18 +708,15 @@ img, iframe {
     font-size: 2.25rem;
   }
   .hSub {
-    font-size: 1.15em;
+    font-size: 1.65rem;
   }
   .paragraph {
-    font-size: 0.95rem;
+    font-size: 1.35rem;
   }
   /* Navbar */
   .rounded {
     width: 60px;
     height: 55px;
-  }
-  a {
-    font-size: 1.1em !important;
   }
   /* Multimedia */
   img, iframe {
@@ -701,7 +724,7 @@ img, iframe {
   }
   /* Index */
   .index-rows {
-    display: grid !important;
+    display: grid;
   }
   .index-rows .index-col {
     width: 700px;
@@ -743,13 +766,13 @@ img, iframe {
     padding: 80px;
   }
   .contact-us .legend {
-    font-size: 1.05rem;
+    font-size: 1.45rem;
   }
   .contact-us .contact, .contact-us .h-contact, .contact-us .terms-c, .contact-us #terms {
-    font-size: 1rem;
+    font-size: 1.35rem;
   }
   .contact-us .submit {
-    font-size: 0.95rem;
+    font-size: 1.25rem;
   }
   /* Discography */
   .section-disc {
@@ -817,34 +840,29 @@ img, iframe {
   header {
     max-width: 100vw;
   }
+  h1 {
+    font-size: 3rem;
+  }
   .hSub {
-    font-size: 1.2em;
+    font-size: 1.75em;
   }
   .paragraph {
-    font-size: 1rem;
+    font-size: 1.45rem;
   }
   .btn {
     color: #ffffff;
   }
-  .btn .btn:hover {
-    font-size: 1.3em;
-    color: #ed7fd6 !important;
-    transition: 2s !important;
+  .btn:hover {
+    font-size: 1.4em;
+    color: #ed7fd6;
+    transition: 2s;
   }
   /* Navbar */
   .rounded {
     width: 80px;
     height: 60px;
   }
-  a {
-    font-size: 1.1em !important;
-  }
   /* hover doesn't work using nesting */
-  a:hover {
-    font-size: 1.3em !important;
-    color: #ed7fd6 !important;
-    transition: 2s !important;
-  }
   /* Multimedia */
   img, iframe {
     width: 560px;
@@ -873,7 +891,7 @@ img, iframe {
   /* Acting */
   .row-acting {
     flex-direction: row !important;
-    flex-wrap: wrap !important;
+    flex-wrap: wrap;
     column-gap: 150px;
     justify-content: center;
   }
@@ -915,13 +933,13 @@ img, iframe {
     padding-right: 120px;
   }
   .contact-us .legend {
-    font-size: 1.15rem;
+    font-size: 1.55rem;
   }
   .contact-us .contact, .contact-us .h-contact, .contact-us .terms-c, .contact-us #terms {
-    font-size: 1.15rem;
+    font-size: 1.45rem;
   }
   .contact-us .submit {
-    font-size: 1.05rem;
+    font-size: 1.35rem;
   }
   /* Discography */
   .section-disc {
