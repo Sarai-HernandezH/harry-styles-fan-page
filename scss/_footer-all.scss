@@ -1,16 +1,95 @@
-@media screen and (min-width:1200px){
+footer {
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: center;
+	border-top: 2px solid #ed7fd6;
+	margin-top: 8px;
+	margin-bottom: 10px;
+    .internalLink {
+        display: grid;
+        grid-template-columns: 58px 58px 58px 58px;
+        grid-auto-rows: 80px;
+        column-gap: 2px;
+        justify-content: center;
+        .redes, .pageUp {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 10px;
+            .icon {
+                width: 30px;
+                height: 30px;
+            }
+        }    
+    }
+}
+@media screen and (min-width: 576px) and (max-width:768px) {
     footer {
-        font-size: 1.20em !important;
+        font-size: 1.15rem;
+        margin-top: 15px;
         .internalLink {
-            grid-template-columns: 100px 100px 100px 100px !important;
-            grid-auto-rows: 100px !important;
-            column-gap: 25px !important;
-            .redes, .pageUp{
+            display: grid;
+            grid-template-columns: 120px 120px 120px 120px;
+            grid-auto-rows: 100px;
+            column-gap: 25px;
+            margin: 20px 20px;
+            .redes, .pageUp {
+                margin: 25px;
+                .icon {
+                    width: 45px;
+                    height: 45px;
+                }    
+            }
+        }
+    }    
+}
+@media screen and (min-width: 768px) and (max-width:992px) {
+    footer {
+        font-size: 1em;
+        .internalLink {
+            display: grid;
+            grid-template-columns: 130px 130px 130px 130px;
+            .redes, .pageUp {
+                margin: 30px;
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                }
+            }    
+        }   
+    }
+
+}
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    footer {
+        font-size: 1.20em;
+        .internalLink {
+            grid-template-columns: 135px 135px 135px 135px;
+            .redes, .pageUp {
                 margin: 35px;
                 .icon {
-                    width: 60px !important;
-                    height: 60px !important;
-                    margin-top: 10px !important;
+                    width: 60px;
+                    height: 60px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1200px){
+    footer {
+        font-size: 1.20em;
+        .internalLink {
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-auto-rows: 100px;
+            column-gap: 25px;
+            .redes, .pageUp {
+                margin: 35px;
+                .icon {
+                    width: 60px;
+                    height: 60px;
+                    margin-top: 10px;
                 }
             }
             .ig {
