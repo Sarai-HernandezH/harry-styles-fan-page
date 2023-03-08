@@ -51,12 +51,13 @@ img, iframe {
 	margin-bottom: 15px;
 }
 /* Index */
-.s-index {
-    .link-index {
-        text-decoration: none;
-        color: $color_3;
-    }
+
+.link-index {
+    text-decoration: none;
+    color: $color_3;
+    font-weight: bold;
 }
+
 /* Awards and Acting */
 
 .row-acting {
