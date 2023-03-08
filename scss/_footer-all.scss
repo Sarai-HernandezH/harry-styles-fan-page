@@ -1,3 +1,17 @@
+.icon {
+    width: 40px;
+    height: 40px;
+}
+.footer-sub{
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: underline;
+}
+.signature{
+    font-size: 1.40rem;
+    font-weight: bold;
+    text-align: center;
+}
 footer {
 	font-size: 1rem;
 	font-weight: bold;
@@ -7,105 +21,107 @@ footer {
 	margin-bottom: 10px;
     .internalLink {
         display: grid;
-        grid-template-columns: 58px 58px 58px 58px;
-        grid-auto-rows: 80px;
+        grid-template-columns: 80px 70px 70px 70px 75PX;
+        grid-template-rows: 120px;
         column-gap: 2px;
         justify-content: center;
-        .redes, .pageUp {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            margin: 15px;
-            .icon {
-                width: 40px;
-                height: 40px;
-            }
-        }    
+        margin-top: 20px;
     }
 }
 @media screen and (min-width: 576px) and (max-width:768px) {
+    .icon {
+        width: 55px;
+        height: 55px;
+    }
+    .footer-sub{
+        font-size: 1.30rem;
+    }
+    .signature{
+        font-size: 1.45rem;
+    }
     footer {
         font-size: 1.15rem;
         margin-top: 15px;
         .internalLink {
             display: grid;
-            grid-template-columns: 120px 120px 120px 120px;
+            grid-template-columns: 100px 100px 100px 100px 100PX;
             grid-auto-rows: 100px;
             column-gap: 25px;
             margin: 20px 20px;
-            .redes, .pageUp {
-                margin: 25px;
-                .icon {
-                    width: 45px;
-                    height: 45px;
-                }    
             }
         }
-    }    
-}
+    }       
 @media screen and (min-width: 768px) and (max-width:992px) {
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+    .footer-sub{
+        font-size: 1.35rem;
+    }
     footer {
-        font-size: 1em;
+        font-size: 1.30rem;
         .internalLink {
             display: grid;
-            grid-template-columns: 130px 130px 130px 130px;
-            .redes, .pageUp {
-                margin: 30px;
-                .icon {
-                    width: 50px;
-                    height: 50px;
-                }
-            }    
-        }   
+            grid-template-columns: 130px 130px 130px 130px 130PX;
+            }
+        }
+    }              
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    .icon {
+        width: 65px;
+        height: 65px;
+        margin-top: 10px;
+    }
+    .footer-sub{
+        font-size: 1.44rem;
+    } 
+    footer {
+        font-size: 1.35rem;
+        .internalLink {
+            grid-template-columns: 135px 135px 135px 135px 135PX;
+        }
     }
 
-}
-@media screen and (min-width: 992px) and (max-width:1200px) {
-    footer {
-        font-size: 1.20em;
-        .internalLink {
-            grid-template-columns: 135px 135px 135px 135px;
-            .redes, .pageUp {
-                margin: 35px;
-                .icon {
-                    width: 60px;
-                    height: 60px;
-                    margin-top: 10px;
-                }
-            }
-        }
-    }
-}
+}          
 @media screen and (min-width:1200px){
+    .icon {
+        width: 65px;
+        height: 65px;
+        margin-top: 10px;
+    } 
+    .footer-sub{
+        font-size: 1.65rem;
+    }
+    .signature{
+        font-size: 1.50rem;
+    }
     footer {
-        font-size: 1.20em;
+        font-size: 1.40rem;
         .internalLink {
-            grid-template-columns: 100px 100px 100px 100px;
-            grid-auto-rows: 100px;
+            display: grid;
+            grid-template-columns: 120px 120px 120px 120px 120px;
+            grid-auto-rows: 150px;
             column-gap: 25px;
-            .redes, .pageUp {
-                margin: 35px;
-                .icon {
-                    width: 60px;
-                    height: 60px;
-                    margin-top: 10px;
-                }
-            }
-            .ig {
-                animation: bounce 10s;
-            } 
-            .tw {
-                animation: bounce1 10s;
-            }
-            .of {
-                animation: bounce2 10s;
-            }
-            .pageUp {
-                animation: bounce3 10s;;
-            }
+            margin-top: 50px;
         }
     }
+    .ig {
+        animation: bounce 10s;
+    } 
+    .tw {
+        animation: bounce1 10s;
+    }
+    .of {
+        animation: bounce2 10s;
+    }
+    .pageUp {
+        animation: bounce3 10s;;
+    }
+    .register{
+        animation: bounce4 10s;
+    }
+}
 @keyframes bounce{
     0% {
         transform:translatey(-100%);
@@ -262,4 +278,42 @@ footer {
         opacity: 1;
         }
     }
-}
+@keyframes bounce4{
+    0% {
+        transform:translatey(-100%);
+        opacity: 0;
+        }
+    15% {
+        transform:translateY(0);
+        padding-bottom: 5px;
+        }
+    30% {
+        transform:translateY(-50%);
+        }
+    40% {
+        transform:translateY(0%);
+        padding-bottom: 6px;
+        }
+    50% {
+        transform:translateY(-30%);
+        }
+    70% {
+        transform:translateY(0%);
+        padding-bottom: 7px;
+        }
+    80% {
+        transform:translateY(-15%);
+        }
+    90% {
+        transform:translateY(0%);
+        padding-bottom: 8px;
+        }
+    95% {
+        transform:translateY(-7%);
+        }
+    100% {
+        transform:translateY(0);
+        padding-bottom: 9px;
+        opacity: 1;
+        }
+    }
