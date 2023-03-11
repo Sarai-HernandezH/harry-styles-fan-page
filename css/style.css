@@ -9,6 +9,7 @@
   font-size: 1rem;
   text-align: center;
   text-decoration: underline;
+  color: rgb(134, 134, 237);
 }
 
 .signature {
@@ -417,6 +418,7 @@ h1 {
 
 .hSub {
   font-size: 1.3rem;
+  color: rgb(134, 134, 237);
 }
 
 .paragraph {
@@ -430,6 +432,10 @@ h1 {
   display: none;
 }
 
+.collapse {
+  margin-bottom: 20px;
+}
+
 /* Navbar */
 .rounded {
   width: 40px;
@@ -438,7 +444,7 @@ h1 {
 
 /* Multimedia */
 img, iframe {
-  width: 330px;
+  width: 310px;
   height: 215px;
   border-radius: 5px;
   justify-content: center;
@@ -446,9 +452,14 @@ img, iframe {
 }
 
 /* Index */
-.s-index .link-index {
+.link-index {
   text-decoration: none;
   color: #ed7fd6;
+  font-weight: bold;
+}
+
+.p-index {
+  text-align: center;
 }
 
 /* Awards and Acting */

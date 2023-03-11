@@ -24,6 +24,7 @@ h1{
 }
 .hSub {
     font-size: 1.30rem;
+    color: rgb(134, 134, 237);
 }
 .paragraph {
 	font-size: 1rem;
@@ -35,6 +36,9 @@ h1{
         }
     }
 }
+.collapse{
+    margin-bottom: 20px;
+}
 /* Navbar */
 
 .rounded {
@@ -44,7 +48,7 @@ h1{
 /* Multimedia */
 
 img, iframe {
-	width: 330px;
+	width: 310px;
 	height: 215px;
 	border-radius: 5px;
 	justify-content: center;
@@ -56,6 +60,9 @@ img, iframe {
     text-decoration: none;
     color: $color_3;
     font-weight: bold;
+}
+.p-index{
+    text-align: center;
 }
 
 /* Awards and Acting */
