@@ -1078,20 +1078,16 @@ img, iframe {
     grid-area: harry-house;
   }
   .row-h-lives {
+    display: flex;
     justify-content: center;
   }
-  .row-h-lives .lives-hide {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .row-h-lives .col-h-lives {
     width: 1000px;
-    margin-left: -160px;
+  }
+  .row-h-lives .col-h-lives .lives-hide {
+    width: 1000px;
     margin-bottom: 40px;
   }
-  /*.col-h-lives{
-              width: 500px;
-              height: 415px;
-          }
-      }
   /* Oned */
   .grid-oned {
     display: flex;

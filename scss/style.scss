@@ -715,18 +715,14 @@ img, iframe {
         }
     }
     .row-h-lives{
+        display: flex;
         justify-content: center;
-            .lives-hide{
-            flex-direction: row;
-            flex-wrap: wrap;
+        .col-h-lives{
             width: 1000px;
-            margin-left: -160px;
-            margin-bottom: 40px;
-        }
-    }
-        /*.col-h-lives{
-            width: 500px;
-            height: 415px;
+            .lives-hide{
+                width: 1000px;
+                margin-bottom: 40px;
+            }
         }
     }
 /* Oned */
