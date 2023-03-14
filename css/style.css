@@ -402,7 +402,7 @@ h1 {
 body {
   font-family: "Roboto", sans-serif !important;
   color: #ffffff !important;
-  background: rgb(0, 0, 0);
+  background: #000000;
   background: linear-gradient(0deg, rgb(0, 0, 0) 17%, rgb(66, 61, 61) 43%, rgb(78, 74, 74) 65%, rgb(0, 0, 0) 89%) !important;
   min-height: 100vh;
 }
@@ -418,7 +418,7 @@ h1 {
 
 .hSub {
   font-size: 1.3rem;
-  color: rgb(134, 134, 237);
+  color: #8686ed;
 }
 
 .paragraph {
@@ -1001,7 +1001,7 @@ img, iframe {
   }
   /* Acting */
   .row-acting {
-    flex-direction: row !important;
+    flex-direction: row;
     flex-wrap: wrap;
     column-gap: 150px;
     justify-content: center;

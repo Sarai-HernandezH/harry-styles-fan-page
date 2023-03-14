@@ -11,7 +11,7 @@
 body {
 	font-family: $font-family_1 !important;
 	color: $color_1 !important;
-    background: rgb(0,0,0);
+    background: $background-color_1;
     background: linear-gradient(0deg, rgba(0,0,0,1) 17%, rgba(66,61,61,1) 43%, rgba(78,74,74,1) 65%, rgba(0,0,0,1) 89%) !important;
 	min-height: 100vh;
 }
@@ -24,7 +24,7 @@ h1{
 }
 .hSub {
     font-size: 1.30rem;
-    color: rgb(134, 134, 237);
+    color: $color_4;
 }
 .paragraph {
 	font-size: 1rem;
@@ -634,7 +634,7 @@ img, iframe {
 /* Acting */
 
     .row-acting {
-        flex-direction: row !important;
+        flex-direction: row;
         flex-wrap: wrap;
         column-gap: 150px;
         justify-content: center;

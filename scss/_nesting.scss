@@ -41,20 +41,20 @@
     }
 }
 @media screen and (min-width: 1200px) {
-    .navbar-expand-sm{
-        .nav-link, .nav-item{
-            a{
+    .navbar-expand-sm {
+        .nav-link, .nav-item {
+            a {
                 font-size: 1.45rem;
             }
         }
     }
 /* no fue posible que agarrara el hover usando nesting,
     ni los cambios sin usar el !important */
-a:hover {
-    transition: font-size 3s !important;
-    font-size: 1.65rem !important;
-    color: $color_3 !important;
-}
+    a:hover {
+        transition: font-size 3s !important;
+        font-size: 1.65rem !important;
+        color: $color_3 !important;
+    }
 }
 
 
