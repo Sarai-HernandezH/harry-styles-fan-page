@@ -1,5 +1,6 @@
 @import "variables";
 
+
 @mixin titles{
 	font-family: $font-family_2;
 	text-align: center;
@@ -34,5 +35,6 @@ h1{
 .hSub{
     @include subtitles;
 }
+
 
 

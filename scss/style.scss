@@ -6,13 +6,11 @@
 	padding: 0px;
 	margin: 0px;
 }
-
-/* No importa lo que intentara el body no toma los cambios si no uso !important */
 body {
-	font-family: $font-family_1 !important;
-	color: $color_1 !important;
+	--bs-body-font-family: 'Roboto', sans-serif;;
+	--bs-body-color: white;
     background: $background-color_1;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 17%, rgba(66,61,61,1) 43%, rgba(78,74,74,1) 65%, rgba(0,0,0,1) 89%) !important;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 17%, rgba(66,61,61,1) 43%, rgba(78,74,74,1) 65%, rgba(0,0,0,1) 89%);
 	min-height: 100vh;
 }
 header {
@@ -28,6 +26,7 @@ h1{
 }
 .paragraph {
 	font-size: 1rem;
+    padding: 7px;
     .btn{
         color: $color_3;
         font-size: 1rem;
@@ -90,6 +89,7 @@ img, iframe {
         font-size: 1.15rem;
         font-weight: bold;
         text-align: center;
+        color: $color_4;
     }
     .contact, .h-contact, .terms-c, #terms {
         font-size: 1.05rem;
@@ -147,6 +147,7 @@ img, iframe {
     }
     .paragraph {
         font-size: 1.10rem;
+        padding: 5px;
     }
 /* Navbar */
     .rounded {
@@ -276,6 +277,7 @@ img, iframe {
     }
     .paragraph {
         font-size: 1.20rem;
+        padding: 10px;
     }
 /* Navbar */
     
@@ -354,7 +356,7 @@ img, iframe {
 .section-disc {
 	display: grid;
 	grid-template-columns: repeat(1, 3fr);
-	grid-template-rows: 500px 500px 500px;
+	grid-template-rows: 815px 810px 810px;
 	grid-template-areas: "harry-styles"
                         "fine-line"
                         "harry-house";
@@ -430,6 +432,7 @@ img, iframe {
     }
     .paragraph {
         font-size: 1.35rem;
+        padding: 15px;
     }
 /* Navbar */
 
@@ -504,10 +507,11 @@ img, iframe {
     .section-disc {
         display: grid;
         grid-template-columns: 480px 440px;
-        grid-template-rows: 560px 560px;
+        grid-template-rows: 825px 745px;
         grid-template-areas: "harry-styles fine-line"
                         "harry-house harry-house";
         row-gap: 20px;
+        column-gap: 15px;
         justify-content: center;
         .col-disc {
             display: grid;
@@ -587,6 +591,7 @@ img, iframe {
     }
     .paragraph {
         font-size: 1.45rem;
+        padding: 15px;
     }
     .btn {
         color: $color_1;
@@ -693,7 +698,7 @@ img, iframe {
     .section-disc {
         display: grid;
         grid-template-columns: 410px 400px;
-        grid-template-rows: 565px;
+        grid-template-rows: 995px;
         grid-template-areas: "harry-styles fine-line harry-house";
         row-gap: 20px;
         justify-content: center;
@@ -716,6 +721,7 @@ img, iframe {
     }
     .row-h-lives{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         .col-h-lives{
             width: 1000px;
@@ -725,13 +731,16 @@ img, iframe {
             }
         }
     }
+    .disc-card{
+        width: 300px;
+    }
 /* Oned */
     
     .grid-oned {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-content: center;
+        justify-content: center;
         .col-oned {
             width: 350px;
             align-content: center;
